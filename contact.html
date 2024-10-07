@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./assets/css/contact.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Image Section -->
+        <div class="image-box">
+            <img src="./assets/images/conatctus.png" alt="Contact Us Image">
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-box">
+            <h1>Contact Us</h1>
+            <!-- Updated form action with Formspree -->
+            <form id="contact-form" action="https://formspree.io/f/mrbgzgoa" method="POST">
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-comment"></i>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn-send">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

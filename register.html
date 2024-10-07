@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-box">
+            <img src="./assets/images/register.png" alt="Background Image"> <!-- Add your image URL -->
+        </div>
+        <div class="form-box">
+            <h1>Register</h1>
+            <form id="registerForm">
+                <div class="input-box">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="name" required placeholder="Name">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" required placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" id="phone" required placeholder="Phone Number">
+                </div>
+                <div class="input-box">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="password" required placeholder="Password">
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn-login">Register</button>
+                </div>
+            </form>
+            <div class="footer-text">
+                <p>Already have an account? <a href="login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Alerts -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="./assets/js/register.js"></script>
+</body>
+</html>

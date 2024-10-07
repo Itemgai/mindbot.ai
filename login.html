@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="form-box">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                </div>
+                <div class="btn-container">
+                    <button type="submit" class="btn-login">Login</button>
+                </div>
+            </form>
+            <div class="footer-text">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </div>
+
+        <!-- Floating Image Section -->
+        <div class="image-box">
+            <img src="./assets/images/login.png" alt="Login Image">
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="alertModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>

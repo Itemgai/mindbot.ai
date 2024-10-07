@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+  color: black; /* Set color to black */
+  font-size: 4rem; /* Increase the font size */
+  font-weight: bold; /* Make it bold */
+}
+
+/* Updated accordion styles */
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.5rem; /* Increased font size */
+  width: 100%;
+  padding: 2.5rem 3rem; /* Increased padding */
+  border: 2px solid #2d6a4f; /* Border color only for the question section */
+  border-radius: 10px; /* Added border radius */
+  outline: none;
+  transition: background-color 0.4s ease, transform 0.4s ease; /* Smooth transition */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 2rem; /* Increased icon size */
+  transition: transform 0.4s ease; /* Smooth rotation animation */
+}
+
+/* Add animation for accordion active state */
+.active i {
+  transform: rotate(180deg); /* Rotate icon */
+}
+
+.active,
+.accordion:hover {
+  background-color: #f1f7f5;
+}
+
+/* Smooth panel height transition */
+.pannel {
+  padding: 0 2rem;
+  background-color: #f1f7f5;
+  overflow: hidden;
+  max-height: 0; /* Initially closed */
+  transition: max-height 0.6s ease, opacity 0.6s ease; /* Smooth height and opacity change */
+  opacity: 0; /* Initially hidden */
+  display: block;
+  border-radius: 10px; /* Match the border radius */
+}
+
+/* Adjust pannel paragraph styles */
+.pannel p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.5rem; /* Increased answer text size */
+  line-height: 1.8; /* Increased line height for readability */
+  padding-top: 1rem;
+}
+
+/* Active panel with visible content */
+.faq.active .pannel {
+  max-height: 400px; /* Adjust this value depending on content length */
+  opacity: 1; /* Fully visible */
+}
+
+.faq {
+  margin: 10px 0;
+  transition: all 0.4s ease; /* Smooth transition on the FAQ */
+}
+
+.faq.active {
+  background-color: transparent; /* No background color on active */
+}
+
+.header, .navbar, .header-actions {
+  background-color: #e3e1dc;
+}
+
+
